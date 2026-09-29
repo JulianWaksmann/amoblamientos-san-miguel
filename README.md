@@ -26,3 +26,8 @@ assets/img/     fotos (.webp) y logo
 ```bash
 python3 -m http.server 5173
 ```
+
+## Al publicar cambios de CSS o JS
+
+GitHub Pages cachea los archivos 10 minutos. Subí el número en `styles.css?v=N` y
+`main.js?v=N` (en `index.html`) para que los visitantes reciban la versión nueva.
