@@ -69,7 +69,9 @@
     const img = list[current].querySelector("img");
     lbImg.src = img.src;
     lbImg.alt = img.alt;
-    lbCap.textContent = list[current].querySelector("figcaption").lastChild.textContent.trim();
+    const title = list[current].querySelector("figcaption").lastChild.textContent.trim();
+    const isDesign = list[current].querySelector(".tag-diseno");
+    lbCap.textContent = isDesign ? `${title} · Diseño ilustrativo` : title;
   };
   works.forEach((w) => w.querySelector(".work__btn").addEventListener("click", () => {
     show(visibleWorks().indexOf(w));

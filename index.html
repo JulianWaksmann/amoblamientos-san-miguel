@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..600;1,400..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 
   <script type="application/ld+json">
   {
@@ -132,7 +132,7 @@
 
         <div class="services">
           <article class="service service--wide reveal">
-            <img src="assets/img/cocina-peninsula.webp" alt="Cocina blanca con península revestida en listones y alacena de roble" loading="lazy" width="1000" height="1333">
+            <img src="assets/img/isla-banquetas.webp" alt="Cocina blanca con isla revestida en listones de madera y banquetas" loading="lazy" width="1000" height="1333">
             <div class="service__body">
               <span class="service__num">01</span>
               <h3>Cocinas</h3>
@@ -140,7 +140,7 @@
             </div>
           </article>
           <article class="service reveal">
-            <img src="assets/img/vestidor.webp" alt="Vestidor de pared completa con estantes, barrales y cajoneras" loading="lazy" width="1010" height="1024">
+            <img src="assets/video/vestidor-roble-poster.webp" alt="Vestidor en roble con estantes, barrales y cajones" loading="lazy" width="576" height="1024">
             <div class="service__body">
               <span class="service__num">02</span>
               <h3>Placares y vestidores</h3>
@@ -148,7 +148,8 @@
             </div>
           </article>
           <article class="service reveal">
-            <img src="assets/img/mueble-tv.webp" alt="Mueble de TV flotante con panel de listones de madera y columna de estantes" loading="lazy" width="1000" height="1333">
+            <img src="assets/img/diseno-rack-tv.webp" alt="Diseño de mueble de TV flotante con panel de listones y columna de estantes" loading="lazy" width="745" height="1000">
+            <span class="tag-diseno">Diseño</span>
             <div class="service__body">
               <span class="service__num">03</span>
               <h3>Living y muebles de TV</h3>
@@ -186,9 +187,9 @@
           <div class="filters reveal" role="tablist" aria-label="Filtrar trabajos">
             <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
             <button class="filter" data-filter="cocinas" role="tab" aria-selected="false">Cocinas</button>
-            <button class="filter" data-filter="guardado" role="tab" aria-selected="false">Placares</button>
-            <button class="filter" data-filter="living" role="tab" aria-selected="false">Living</button>
+            <button class="filter" data-filter="placares" role="tab" aria-selected="false">Placares</button>
             <button class="filter" data-filter="madera" role="tab" aria-selected="false">Escaleras</button>
+            <button class="filter" data-filter="disenos" role="tab" aria-selected="false">Diseños</button>
           </div>
         </header>
 
@@ -199,23 +200,25 @@
             </button>
             <figcaption><span>Cocinas</span>Isla con frente de listones</figcaption>
           </figure>
-          <figure class="work reveal" data-cat="cocinas">
-            <button class="work__btn" aria-label="Ampliar: Columnas con nicho iluminado">
-              <img src="assets/img/cocina-nicho-led.webp" alt="Cocina con columnas símil madera, alacenas claras y nicho con luz LED" loading="lazy" width="1000" height="1333">
+          <figure class="work reveal" data-cat="disenos">
+            <button class="work__btn" aria-label="Ampliar: Rack de TV flotante">
+              <img src="assets/img/diseno-rack-tv.webp" alt="Diseño de mueble de TV flotante con panel de listones y columna de estantes" loading="lazy" width="745" height="1000">
+              <span class="tag-diseno">Diseño</span>
             </button>
-            <figcaption><span>Cocinas</span>Columnas con nicho iluminado</figcaption>
+            <figcaption><span>Diseño</span>Rack de TV flotante</figcaption>
           </figure>
-          <figure class="work reveal" data-cat="living">
-            <button class="work__btn" aria-label="Ampliar: Mueble de TV con panel de listones">
-              <img src="assets/img/mueble-tv.webp" alt="Mueble de TV blanco flotante con panel de listones de madera y columna de estantes" loading="lazy" width="1000" height="1333">
+          <figure class="work reveal" data-cat="madera">
+            <button class="work__btn" aria-label="Ampliar: Huellas de madera maciza">
+              <img src="assets/img/escalera.webp" alt="Escalera con huellas de madera maciza y contrahuellas negras" loading="lazy" width="855" height="1003">
             </button>
-            <figcaption><span>Living</span>Mueble de TV con panel de listones</figcaption>
+            <figcaption><span>Escaleras</span>Huellas de madera maciza</figcaption>
           </figure>
-          <figure class="work reveal" data-cat="cocinas">
-            <button class="work__btn" aria-label="Ampliar: Península con listones y roble">
-              <img src="assets/img/cocina-peninsula.webp" alt="Cocina blanca con península revestida en listones y alacena de roble" loading="lazy" width="1000" height="1333">
+          <figure class="work reveal" data-cat="disenos">
+            <button class="work__btn" aria-label="Ampliar: Península con listones">
+              <img src="assets/img/diseno-peninsula.webp" alt="Diseño de cocina blanca con península revestida en listones y alacena de madera" loading="lazy" width="1000" height="1333">
+              <span class="tag-diseno">Diseño</span>
             </button>
-            <figcaption><span>Cocinas</span>Península con listones y roble</figcaption>
+            <figcaption><span>Diseño</span>Península con listones</figcaption>
           </figure>
           <figure class="work reveal" data-cat="cocinas">
             <button class="work__btn" aria-label="Ampliar: Estantes flotantes de madera">
@@ -223,29 +226,44 @@
             </button>
             <figcaption><span>Cocinas</span>Estantes flotantes de madera</figcaption>
           </figure>
+          <figure class="work reveal" data-cat="disenos">
+            <button class="work__btn" aria-label="Ampliar: Vestidor con luz LED">
+              <img src="assets/img/diseno-vestidor-led.webp" alt="Diseño de vestidor blanco de pared completa con iluminación LED" loading="lazy" width="1000" height="1014">
+              <span class="tag-diseno">Diseño</span>
+            </button>
+            <figcaption><span>Diseño</span>Vestidor con luz LED</figcaption>
+          </figure>
+          <figure class="work reveal" data-cat="placares">
+            <button class="work__btn" aria-label="Ampliar: Vestidor en roble">
+              <img src="assets/video/vestidor-roble-poster.webp" alt="Vestidor en roble con estantes, barrales y cajones" loading="lazy" width="576" height="1024">
+            </button>
+            <figcaption><span>Placares</span>Vestidor en roble</figcaption>
+          </figure>
+          <figure class="work reveal" data-cat="disenos">
+            <button class="work__btn" aria-label="Ampliar: Cocina en L con luz LED">
+              <img src="assets/img/diseno-cocina-l.webp" alt="Diseño de cocina en L con alacenas de madera clara e iluminación LED" loading="lazy" width="1000" height="1333">
+              <span class="tag-diseno">Diseño</span>
+            </button>
+            <figcaption><span>Diseño</span>Cocina en L con luz LED</figcaption>
+          </figure>
           <figure class="work reveal" data-cat="cocinas">
             <button class="work__btn" aria-label="Ampliar: Isla vista desde la escalera">
               <img src="assets/img/isla-listones-lateral.webp" alt="Isla de cocina con listones de madera vista de costado, junto a la escalera" loading="lazy" width="1000" height="1333">
             </button>
             <figcaption><span>Cocinas</span>Isla vista desde la escalera</figcaption>
           </figure>
-          <figure class="work reveal" data-cat="guardado">
-            <button class="work__btn" aria-label="Ampliar: Vestidor de pared completa">
-              <img src="assets/img/vestidor.webp" alt="Vestidor blanco de pared completa con cajoneras y barrales" loading="lazy" width="1010" height="1024">
-            </button>
-            <figcaption><span>Placares</span>Vestidor de pared completa</figcaption>
-          </figure>
-          <figure class="work reveal" data-cat="madera">
-            <button class="work__btn" aria-label="Ampliar: Escalera con huellas de madera maciza">
-              <img src="assets/img/escalera.webp" alt="Escalera con huellas de madera maciza y contrahuellas negras" loading="lazy" width="855" height="1003">
-            </button>
-            <figcaption><span>Escaleras</span>Huellas de madera maciza</figcaption>
-          </figure>
           <figure class="work reveal" data-cat="cocinas">
-            <button class="work__btn" aria-label="Ampliar: Cocina gris grafito con botellero">
+            <button class="work__btn" aria-label="Ampliar: Gris grafito con botellero">
               <img src="assets/img/cocina-grafito.webp" alt="Cocina en gris grafito con alacenas y botellero" loading="lazy" width="887" height="859">
             </button>
             <figcaption><span>Cocinas</span>Gris grafito con botellero</figcaption>
+          </figure>
+          <figure class="work reveal" data-cat="disenos">
+            <button class="work__btn" aria-label="Ampliar: Nogal y verde con vitrina">
+              <img src="assets/img/diseno-cocina-nogal.webp" alt="Diseño de cocina en nogal con alacenas verdes y vitrina iluminada" loading="lazy" width="745" height="1000">
+              <span class="tag-diseno">Diseño</span>
+            </button>
+            <figcaption><span>Diseño</span>Nogal y verde con vitrina</figcaption>
           </figure>
           <figure class="work reveal" data-cat="cocinas">
             <button class="work__btn" aria-label="Ampliar: Isla con banquetas de madera">
@@ -274,7 +292,7 @@
         </div>
 
         <div class="gallery__more reveal">
-          <p>Hay muchos más trabajos en nuestro Instagram.</p>
+          <p>Las imágenes marcadas como <em>Diseño</em> son propuestas ilustrativas. Hay muchos más trabajos en nuestro Instagram.</p>
           <a class="btn btn--ghost-light" href="https://www.instagram.com/amoblamientos.sanmiguel/" target="_blank" rel="noopener">
             <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2ZM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0Zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9Z"/></svg>
             @amoblamientos.sanmiguel
@@ -320,7 +338,7 @@
     <section class="feature">
       <div class="container feature__grid">
         <figure class="feature__img reveal">
-          <img src="assets/img/cocina-nicho-led.webp" alt="Cocina a medida con columnas símil madera y nicho iluminado" loading="lazy" width="1000" height="1333">
+          <img src="assets/img/isla-listones-lateral.webp" alt="Isla de cocina con listones de madera vista de costado" loading="lazy" width="1000" height="1333">
         </figure>
         <div class="feature__copy">
           <p class="eyebrow reveal">Por qué a medida</p>
@@ -466,6 +484,6 @@
     <button class="lightbox__nav lightbox__nav--next" aria-label="Siguiente">›</button>
   </dialog>
 
-  <script src="main.js?v=3" defer></script>
+  <script src="main.js?v=4" defer></script>
 </body>
 </html>
