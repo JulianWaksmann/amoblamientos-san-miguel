@@ -18,7 +18,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..600;1,400..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -103,7 +103,7 @@
             <img src="assets/img/cocina-isla.webp" alt="Cocina integrada con alacenas verde oscuro, isla-mesa de madera y banquetas de fibra" width="840" height="1150" fetchpriority="high">
           </figure>
           <figure class="hero__img hero__img--float">
-            <img src="assets/img/despensa.webp" alt="Mueble despensa con nicho de madera para desayunador" width="813" height="1150" loading="lazy">
+            <img src="assets/img/isla-listones.webp" alt="Isla de cocina con frente de listones de madera y banquetas" width="1000" height="1333" loading="lazy">
           </figure>
           <div class="hero__badge">
             <strong>Hecho a medida</strong>
@@ -116,8 +116,8 @@
     <!-- ============ MARQUEE ============ -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
-        <span>Cocinas</span><i></i><span>Placares</span><i></i><span>Vestidores</span><i></i><span>Alacenas</span><i></i><span>Despensas</span><i></i><span>Escaleras</span><i></i><span>Islas</span><i></i><span>Muebles de guardado</span><i></i>
-        <span>Cocinas</span><i></i><span>Placares</span><i></i><span>Vestidores</span><i></i><span>Alacenas</span><i></i><span>Despensas</span><i></i><span>Escaleras</span><i></i><span>Islas</span><i></i><span>Muebles de guardado</span><i></i>
+        <span>Cocinas</span><i></i><span>Islas</span><i></i><span>Placares</span><i></i><span>Vestidores</span><i></i><span>Muebles de TV</span><i></i><span>Paneles de listones</span><i></i><span>Alacenas</span><i></i><span>Despensas</span><i></i><span>Escaleras</span><i></i>
+        <span>Cocinas</span><i></i><span>Islas</span><i></i><span>Placares</span><i></i><span>Vestidores</span><i></i><span>Muebles de TV</span><i></i><span>Paneles de listones</span><i></i><span>Alacenas</span><i></i><span>Despensas</span><i></i><span>Escaleras</span><i></i>
       </div>
     </div>
 
@@ -167,7 +167,7 @@
             <div class="service__body">
               <span class="service__num">05</span>
               <h3>Proyectos especiales</h3>
-              <p>Muebles de TV, bibliotecas, vanitorys, escritorios… Si tenés una idea, la bajamos a un mueble.</p>
+              <p>Muebles de TV, paneles de listones, bibliotecas, vanitorys, escritorios… Si tenés una idea, la bajamos a un mueble.</p>
               <a class="link-arrow" href="#contacto">Contanos tu idea <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -187,11 +187,48 @@
             <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
             <button class="filter" data-filter="cocinas" role="tab" aria-selected="false">Cocinas</button>
             <button class="filter" data-filter="guardado" role="tab" aria-selected="false">Placares y despensas</button>
+            <button class="filter" data-filter="living" role="tab" aria-selected="false">Living</button>
             <button class="filter" data-filter="madera" role="tab" aria-selected="false">Escaleras</button>
           </div>
         </header>
 
         <div class="gallery" id="gallery">
+          <figure class="work reveal" data-cat="cocinas">
+            <button class="work__btn" aria-label="Ampliar: Isla con frente de listones">
+              <img src="assets/img/isla-listones.webp" alt="Cocina blanca con isla de listones de madera, mesada símil mármol y banquetas" loading="lazy" width="1000" height="1333">
+            </button>
+            <figcaption><span>Cocinas</span>Isla con frente de listones</figcaption>
+          </figure>
+          <figure class="work reveal" data-cat="cocinas">
+            <button class="work__btn" aria-label="Ampliar: Columnas con nicho iluminado">
+              <img src="assets/img/cocina-nicho-led.webp" alt="Cocina con columnas símil madera, alacenas claras y nicho con luz LED" loading="lazy" width="1000" height="1333">
+            </button>
+            <figcaption><span>Cocinas</span>Columnas con nicho iluminado</figcaption>
+          </figure>
+          <figure class="work reveal" data-cat="living">
+            <button class="work__btn" aria-label="Ampliar: Mueble de TV con panel de listones">
+              <img src="assets/img/mueble-tv.webp" alt="Mueble de TV blanco flotante con panel de listones de madera y columna de estantes" loading="lazy" width="1000" height="1333">
+            </button>
+            <figcaption><span>Living</span>Mueble de TV con panel de listones</figcaption>
+          </figure>
+          <figure class="work reveal" data-cat="cocinas">
+            <button class="work__btn" aria-label="Ampliar: Península con listones y roble">
+              <img src="assets/img/cocina-peninsula.webp" alt="Cocina blanca con península revestida en listones y alacena de roble" loading="lazy" width="1000" height="1333">
+            </button>
+            <figcaption><span>Cocinas</span>Península con listones y roble</figcaption>
+          </figure>
+          <figure class="work reveal" data-cat="cocinas">
+            <button class="work__btn" aria-label="Ampliar: Estantes flotantes de madera">
+              <img src="assets/img/cocina-blanca-estantes.webp" alt="Cocina blanca con estantes flotantes de madera sobre la mesada" loading="lazy" width="1000" height="1333">
+            </button>
+            <figcaption><span>Cocinas</span>Estantes flotantes de madera</figcaption>
+          </figure>
+          <figure class="work reveal" data-cat="cocinas">
+            <button class="work__btn" aria-label="Ampliar: Isla vista desde la escalera">
+              <img src="assets/img/isla-listones-lateral.webp" alt="Isla de cocina con listones de madera vista de costado, junto a la escalera" loading="lazy" width="1000" height="1333">
+            </button>
+            <figcaption><span>Cocinas</span>Isla vista desde la escalera</figcaption>
+          </figure>
           <figure class="work work--tall reveal" data-cat="cocinas">
             <button class="work__btn" aria-label="Ampliar: Cocina integrada con isla de roble">
               <img src="assets/img/cocina-isla.webp" alt="Cocina integrada con isla-mesa de roble y alacenas verde oscuro" loading="lazy" width="840" height="1150">
@@ -227,6 +264,24 @@
               <img src="assets/img/cocina-grafito.webp" alt="Cocina en gris grafito con alacenas y botellero" loading="lazy" width="887" height="859">
             </button>
             <figcaption><span>Cocinas</span>Gris grafito con botellero</figcaption>
+          </figure>
+        </div>
+
+        <div class="videos">
+          <div class="videos__copy reveal">
+            <p class="eyebrow">En video</p>
+            <h3>Mirá los trabajos <em>de cerca</em>.</h3>
+            <p>Terminaciones, cajones y detalles que en una foto no se ven.</p>
+          </div>
+          <figure class="clip reveal">
+            <video src="assets/video/cocina-isla.mp4" poster="assets/video/cocina-isla-poster.webp" muted loop playsinline preload="none" aria-label="Recorrido por una cocina blanca con isla de listones"></video>
+            <button class="clip__sound" type="button" aria-label="Activar sonido" aria-pressed="false"></button>
+            <figcaption>Cocina con isla de listones</figcaption>
+          </figure>
+          <figure class="clip reveal">
+            <video src="assets/video/vestidor-roble.mp4" poster="assets/video/vestidor-roble-poster.webp" muted loop playsinline preload="none" aria-label="Recorrido por un vestidor en roble con cajones"></video>
+            <button class="clip__sound" type="button" aria-label="Activar sonido" aria-pressed="false"></button>
+            <figcaption>Vestidor en roble</figcaption>
           </figure>
         </div>
 
@@ -277,7 +332,7 @@
     <section class="feature">
       <div class="container feature__grid">
         <figure class="feature__img reveal">
-          <img src="assets/img/detalle-estante.webp" alt="Detalle de cocina: estante de madera, alacenas verde salvia y mesada con veta de mármol" loading="lazy" width="540" height="675">
+          <img src="assets/img/cocina-nicho-led.webp" alt="Cocina a medida con columnas símil madera y nicho iluminado" loading="lazy" width="1000" height="1333">
         </figure>
         <div class="feature__copy">
           <p class="eyebrow reveal">Por qué a medida</p>

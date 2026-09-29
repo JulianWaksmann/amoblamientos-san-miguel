@@ -84,6 +84,29 @@
     if (e.key === "ArrowRight") show(current + 1);
   });
 
+  // Videos: se reproducen en silencio mientras están en pantalla
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const clips = document.querySelectorAll(".clip video");
+  if ("IntersectionObserver" in window && !reduceMotion) {
+    const vio = new IntersectionObserver((entries) => {
+      entries.forEach(({ target, isIntersecting }) => {
+        if (isIntersecting) target.play().catch(() => {});
+        else target.pause();
+      });
+    }, { threshold: 0.5 });
+    clips.forEach((v) => vio.observe(v));
+  }
+  document.querySelectorAll(".clip__sound").forEach((btn) => btn.addEventListener("click", () => {
+    const video = btn.parentElement.querySelector("video");
+    const on = video.muted;
+    // Un solo video con sonido a la vez
+    if (on) clips.forEach((v) => { if (v !== video) { v.muted = true; v.parentElement.querySelector(".clip__sound").setAttribute("aria-pressed", "false"); } });
+    video.muted = !on;
+    if (on) video.play().catch(() => {});
+    btn.setAttribute("aria-pressed", String(on));
+    btn.setAttribute("aria-label", on ? "Silenciar" : "Activar sonido");
+  }));
+
   // Formulario → WhatsApp con el mensaje armado
   const form = document.getElementById("quote-form");
   const error = document.getElementById("form-error");
