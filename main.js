@@ -70,7 +70,7 @@
     lbImg.src = img.src;
     lbImg.alt = img.alt;
     const title = list[current].querySelector("figcaption").lastChild.textContent.trim();
-    const isDesign = list[current].querySelector(".tag-diseno");
+    const isDesign = list[current].dataset.cat === "disenos";
     lbCap.textContent = isDesign ? `${title} · Diseño ilustrativo` : title;
   };
   works.forEach((w) => w.querySelector(".work__btn").addEventListener("click", () => {
